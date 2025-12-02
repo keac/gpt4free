@@ -94,7 +94,7 @@ class Grok(AsyncAuthedProvider, ProviderModelMixin):
                     break
                 input_element = None
                 try:
-                    input_element = await page.select("div.ProseMirror", 2)
+                    input_element = await page.select("div.ProseMirror", 180)
                 except Exception:
                     pass
                 if not input_element:
